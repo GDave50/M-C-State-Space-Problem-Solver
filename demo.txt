@@ -1,0 +1,569 @@
+[1]> (load "prog.l")
+;; Loading file prog.l ...
+;;  Loading file bank.l ...
+;;  Loaded file bank.l
+;;  Loading file name-generator.l ...
+;;  Loaded file name-generator.l
+;;  Loading file node.l ...
+;;  Loaded file node.l
+;;  Loading file operator.l ...
+;;  Loaded file operator.l
+;;  Loading file state.l ...
+;;  Loaded file state.l
+;; Loaded file prog.l
+T
+[2]> (mc)
+
+>>> Solve
+
+EXPLORED
+
+UNEXPLORED
+((M M M) (C C C) B) (NIL NIL NIL)
+
+
+Pop ((M M M) (C C C) B) (NIL NIL NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M M) (C C) NIL) (NIL (C) B)
+
+
+Pop ((M M) (C C) NIL) ((M) (C) B)
+
+>>> Solve
+
+EXPLORED
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C) NIL) (NIL (C C) B)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) (C C) B) (NIL (C) NIL)
+
+
+Pop ((M M M) (C) NIL) (NIL (C C) B)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) (C C) B) (NIL (C) NIL)
+
+
+Pop ((M M M) (C C) NIL) (NIL (C) B)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+
+Pop ((M M M) (C C C) B) (NIL NIL NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+
+Pop ((M M M) (C C) B) (NIL (C) NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+
+
+Pop ((M M M) (C C C) B) (NIL NIL NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+
+
+Pop ((M M M) (C C) B) (NIL (C) NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C C C) B) (NIL NIL NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+
+
+Pop ((M M M) (C C C) B) (NIL NIL NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+
+
+Pop ((M M M) NIL NIL) (NIL (C C C) B)
+
+>>> Solve
+
+EXPLORED
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C) B) (NIL (C C) NIL)
+
+
+Pop ((M M M) (C) NIL) (NIL (C C) B)
+
+>>> Solve
+
+EXPLORED
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C) B) (NIL (C C) NIL)
+
+
+Pop ((M M) (C C) NIL) ((M) (C) B)
+
+>>> Solve
+
+EXPLORED
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C) B) (NIL (C C) NIL)
+
+
+Pop ((M M M) (C C) B) (NIL (C) NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C) B) (NIL (C C) NIL)
+
+
+Pop ((M M M) (C) B) (NIL (C C) NIL)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) NIL NIL) (NIL (C C C) B)
+((M) (C) NIL) ((M M) (C C) B)
+
+
+Pop ((M M M) NIL NIL) (NIL (C C C) B)
+
+>>> Solve
+
+EXPLORED
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M) (C) NIL) ((M M) (C C) B)
+
+
+Pop ((M) (C) NIL) ((M M) (C C) B)
+
+>>> Solve
+
+EXPLORED
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M) (C C) B) ((M) (C) NIL)
+((M M M) (C) B) (NIL (C C) NIL)
+
+
+Pop ((M M) (C C) B) ((M) (C) NIL)
+
+>>> Solve
+
+EXPLORED
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M M) (C) B) (NIL (C C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+(NIL (C C) NIL) ((M M M) (C) B)
+
+
+Pop ((M M M) (C) B) (NIL (C C) NIL)
+
+>>> Solve
+
+EXPLORED
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M) (C) NIL) ((M M) (C C) B)
+(NIL (C C) NIL) ((M M M) (C) B)
+
+
+Pop ((M) (C) NIL) ((M M) (C C) B)
+
+>>> Solve
+
+EXPLORED
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+(NIL (C C) NIL) ((M M M) (C) B)
+
+
+Pop (NIL (C C) NIL) ((M M M) (C) B)
+
+>>> Solve
+
+EXPLORED
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+(NIL (C C C) B) ((M M M) NIL NIL)
+((M M) (C C) B) ((M) (C) NIL)
+
+
+Pop (NIL (C C C) B) ((M M M) NIL NIL)
+
+>>> Solve
+
+EXPLORED
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M M) (C C) B) ((M) (C) NIL)
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL (C C) NIL) ((M M M) (C) B)
+
+
+Pop ((M M) (C C) B) ((M) (C) NIL)
+
+>>> Solve
+
+EXPLORED
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL (C C) NIL) ((M M M) (C) B)
+
+
+Pop (NIL (C) NIL) ((M M M) (C C) B)
+
+>>> Solve
+
+EXPLORED
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+(NIL (C C) NIL) ((M M M) (C) B)
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) B) ((M M M) (C) NIL)
+((M) (C) B) ((M M) (C C) NIL)
+
+
+Pop (NIL (C C) NIL) ((M M M) (C) B)
+
+>>> Solve
+
+EXPLORED
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) B) ((M M M) (C) NIL)
+((M) (C) B) ((M M) (C C) NIL)
+
+
+Pop (NIL (C C C) B) ((M M M) NIL NIL)
+
+>>> Solve
+
+EXPLORED
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+(NIL (C C) B) ((M M M) (C) NIL)
+((M) (C) B) ((M M) (C C) NIL)
+
+
+Pop (NIL (C C) B) ((M M M) (C) NIL)
+
+>>> Solve
+
+EXPLORED
+(NIL (C C) B) ((M M M) (C) NIL)
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+((M) (C) B) ((M M) (C C) NIL)
+(NIL NIL NIL) ((M M M) (C C C) B)
+(NIL (C) NIL) ((M M M) (C C) B)
+
+
+Pop ((M) (C) B) ((M M) (C C) NIL)
+
+>>> Solve
+
+EXPLORED
+((M) (C) B) ((M M) (C C) NIL)
+(NIL (C C) B) ((M M M) (C) NIL)
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL (C C C) B) ((M M M) NIL NIL)
+(NIL (C C) NIL) ((M M M) (C) B)
+((M M) (C C) B) ((M) (C) NIL)
+((M) (C) NIL) ((M M) (C C) B)
+((M M M) (C) B) (NIL (C C) NIL)
+((M M M) NIL NIL) (NIL (C C C) B)
+((M M M) (C C) B) (NIL (C) NIL)
+((M M M) (C C) NIL) (NIL (C) B)
+((M M M) (C) NIL) (NIL (C C) B)
+((M M) (C C) NIL) ((M) (C) B)
+((M M M) (C C C) B) (NIL NIL NIL)
+
+UNEXPLORED
+(NIL NIL NIL) ((M M M) (C C C) B)
+(NIL (C) NIL) ((M M M) (C C) B)
+(NIL NIL NIL) ((M M M) (C C C) B)
+(NIL (C) NIL) ((M M M) (C C) B)
+
+
+Pop (NIL NIL NIL) ((M M M) (C C C) B)
+
+Solution:
+One cannibal and one missionary go to right bank
+One missionary goes to left bank
+Two cannibals go to right bank
+One cannibal goes to left bank
+Two missionaries go to right bank
+One cannibal and one missionary go to left bank
+Two missionaries go to right bank
+One cannibal goes to left bank
+Two cannibals go to right bank
+One cannibal goes to left bank
+Two cannibals go to right bank
+NIL
+[3]> (bye)
+Bye.
